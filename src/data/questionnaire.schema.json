@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas question bank",
+  "type": "object",
+  "required": ["version", "questions"],
+  "properties": {
+    "version": { "type": "string" },
+    "questions": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "scenario",
+          "question",
+          "options",
+          "dimensions",
+          "source_ids",
+          "explanation"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^Q(0[1-9]|1[0-9]|20)$" },
+          "options": {
+            "type": "array",
+            "minItems": 5,
+            "items": {
+              "type": "object",
+              "required": ["code", "label", "kind"],
+              "properties": {
+                "code": { "enum": ["A", "B", "C", "D", "E", "?"] },
+                "label": { "type": "string", "minLength": 1 },
+                "kind": { "enum": ["declared", "conditional", "uncertain"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

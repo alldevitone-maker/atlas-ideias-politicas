@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-10-22T06:56:12.993Z",
+  "note": "Disponibilidade técnica não valida conteúdo ou instrumento.",
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm",
+      "status": 503,
+      "title": "",
+      "ok": false
+    },
+    {
+      "id": "S02",
+      "url": "https://www.oecd.org/en/publications/oecd-guidelines-on-corporate-governance-of-state-owned-enterprises-2024_18a24f43-en.html",
+      "status": 200,
+      "title": "OECD Guidelines on Corporate Governance of State‑Owned Enterprises 2024 | OECD",
+      "ok": true
+    },
+    {
+      "id": "S03",
+      "url": "https://www.idea.int/publications/catalogue/html/global-state-democracy-indices-methodology-version-10-2026",
+      "status": 200,
+      "title": "The Global State of Democracy Indices Methodology, Version 10 (2026): Conceptualization and Measurement Framework | International IDEA",
+      "ok": true
+    },
+    {
+      "id": "S04",
+      "url": "https://www.oecd.org/en/publications/inheritance-taxation-in-oecd-countries_e2879a7d-en.html",
+      "status": 200,
+      "title": "Inheritance Taxation in OECD Countries | OECD",
+      "ok": true
+    },
+    {
+      "id": "S05",
+      "url": "https://plato.stanford.edu/entries/socialism/",
+      "status": 200,
+      "title": "Socialism (Stanford Encyclopedia of Philosophy)",
+      "ok": true
+    },
+    {
+      "id": "S17",
+      "url": "https://plato.stanford.edu/entries/liberalism/",
+      "status": 200,
+      "title": "Liberalism (Stanford Encyclopedia of Philosophy)",
+      "ok": true
+    },
+    {
+      "id": "S18",
+      "url": "https://plato.stanford.edu/entries/conservatism/",
+      "status": 200,
+      "title": "Conservatism (Stanford Encyclopedia of Philosophy)",
+      "ok": true
+    },
+    {
+      "id": "S19",
+      "url": "https://plato.stanford.edu/entries/anarchism/",
+      "status": 200,
+      "title": "Anarchism (Stanford Encyclopedia of Philosophy)",
+      "ok": true
+    },
+    {
+      "id": "S20",
+      "url": "https://plato.stanford.edu/entries/libertarianism/",
+      "status": 200,
+      "title": "Libertarianism (Stanford Encyclopedia of Philosophy)",
+      "ok": true
+    },
+    {
+      "id": "S21",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/fascism-1",
+      "status": 200,
+      "title": "Fascism | Holocaust Encyclopedia",
+      "ok": true
+    },
+    {
+      "id": "S14",
+      "url": "https://encyclopedia.ushmm.org/content/pt-br/article/the-nazi-party-1",
+      "status": 200,
+      "title": "O Partido Nazista | Enciclopédia do Holocausto",
+      "ok": true
+    },
+    {
+      "id": "S22",
+      "url": "https://plato.stanford.edu/archives/spr2025/entries/marx/",
+      "status": 200,
+      "title": "Karl Marx (Stanford Encyclopedia of Philosophy/Spring 2025 Edition)",
+      "ok": true
+    }
+  ]
+}

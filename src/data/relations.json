@@ -1,0 +1,26 @@
+[
+  {
+    "id": "R1",
+    "a": "Q01",
+    "b": "Q14",
+    "title": "Arranjo inicial e economia futura",
+    "sourceIds": ["S05"],
+    "rationale": "Os cenários perguntam sobre composição da propriedade em contextos diferentes; preferências diferentes podem depender do contexto."
+  },
+  {
+    "id": "R2",
+    "a": "Q11",
+    "b": "Q18",
+    "title": "Provas em dois cenários",
+    "sourceIds": ["S01"],
+    "rationale": "As formulações diferem. Uma diferença na regra escolhida é motivo de reflexão, não diagnóstico de parcialidade."
+  },
+  {
+    "id": "R3",
+    "a": "Q05",
+    "b": "Q20",
+    "title": "Oposição ao próprio governo e ao seguinte",
+    "sourceIds": ["S03"],
+    "rationale": "Liberdade de oposição e alternância são conceitos relacionados. Fiscalização, oposição e manifestação pacífica podem coexistir."
+  }
+]

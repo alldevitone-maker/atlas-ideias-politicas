@@ -1,0 +1,134 @@
+[
+  {
+    "id": "S01",
+    "author": "Presidência da República",
+    "title": "Constituição da República Federativa do Brasil de 1988",
+    "year": "1988, texto compilado",
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm",
+    "scope": "Direitos e ordem econômica; art. 5º e arts. 170–174.",
+    "type": "official",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo conferido por recuperação web; S01 confirmado na busca oficial, leitura direta indisponível."
+  },
+  {
+    "id": "S02",
+    "author": "OECD",
+    "title": "OECD Guidelines on Corporate Governance of State-Owned Enterprises",
+    "year": "2024",
+    "url": "https://www.oecd.org/en/publications/oecd-guidelines-on-corporate-governance-of-state-owned-enterprises-2024_18a24f43-en.html",
+    "scope": "Governança e fiscalização de estatais.",
+    "type": "official",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  },
+  {
+    "id": "S03",
+    "author": "Svend-Erik Skaaning; Alexander Hudson / International IDEA",
+    "title": "Global State of Democracy Indices Methodology, Version 10",
+    "year": "2026",
+    "url": "https://www.idea.int/publications/catalogue/html/global-state-democracy-indices-methodology-version-10-2026",
+    "scope": "Conceitos de democracia, não avaliação de visitantes.",
+    "type": "academic",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  },
+  {
+    "id": "S04",
+    "author": "OECD",
+    "title": "Inheritance Taxation in OECD Countries",
+    "year": "2021",
+    "url": "https://www.oecd.org/en/publications/inheritance-taxation-in-oecd-countries_e2879a7d-en.html",
+    "scope": "Instrumentos tributários e desenho de políticas.",
+    "type": "official",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  },
+  {
+    "id": "S05",
+    "author": "Pablo Gilabert; Martin O’Neill / Stanford Encyclopedia of Philosophy",
+    "title": "Socialism",
+    "year": "2024",
+    "url": "https://plato.stanford.edu/entries/socialism/",
+    "scope": "Seções sobre propriedade social, mercados, planejamento e estratégia.",
+    "type": "academic",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  },
+  {
+    "id": "S17",
+    "author": "Stanford Encyclopedia of Philosophy",
+    "title": "Liberalism",
+    "year": "2026",
+    "url": "https://plato.stanford.edu/entries/liberalism/",
+    "scope": "Divergências internas às tradições liberais.",
+    "type": "academic",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  },
+  {
+    "id": "S18",
+    "author": "Stanford Encyclopedia of Philosophy",
+    "title": "Conservatism",
+    "year": "2025",
+    "url": "https://plato.stanford.edu/entries/conservatism/",
+    "scope": "Mudança, tradição e prudência.",
+    "type": "academic",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  },
+  {
+    "id": "S19",
+    "author": "Stanford Encyclopedia of Philosophy",
+    "title": "Anarchism",
+    "year": "2025",
+    "url": "https://plato.stanford.edu/entries/anarchism/",
+    "scope": "Crítica à autoridade e diferenças entre anarquismos.",
+    "type": "academic",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  },
+  {
+    "id": "S20",
+    "author": "Stanford Encyclopedia of Philosophy",
+    "title": "Libertarianism",
+    "year": "2023",
+    "url": "https://plato.stanford.edu/entries/libertarianism/",
+    "scope": "Liberdade individual e teorias de propriedade.",
+    "type": "academic",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  },
+  {
+    "id": "S21",
+    "author": "United States Holocaust Memorial Museum",
+    "title": "Fascism",
+    "year": "s.d.",
+    "url": "https://encyclopedia.ushmm.org/content/en/article/fascism-1",
+    "scope": "Características históricas e antidemocracia.",
+    "type": "academic",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  },
+  {
+    "id": "S14",
+    "author": "United States Holocaust Memorial Museum",
+    "title": "O Partido Nazista",
+    "year": "s.d.",
+    "url": "https://encyclopedia.ushmm.org/content/pt-br/article/the-nazi-party-1",
+    "scope": "Racismo, antissemitismo, ditadura e perseguição.",
+    "type": "academic",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  },
+  {
+    "id": "S22",
+    "author": "Stanford Encyclopedia of Philosophy",
+    "title": "Karl Marx",
+    "year": "edição primavera 2025",
+    "url": "https://plato.stanford.edu/archives/spr2025/entries/marx/",
+    "scope": "Teoria de Marx; não representa todos os regimes comunistas.",
+    "type": "academic",
+    "accessedAt": "2026-10-22",
+    "verification": "Conteúdo recuperado na revisão editorial."
+  }
+]

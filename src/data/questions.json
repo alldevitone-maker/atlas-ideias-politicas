@@ -1,0 +1,817 @@
+{
+  "version": "1.0.0-editorial",
+  "language": "pt-BR",
+  "status": "exploratory-not-validated",
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Propriedade e setores estratégicos",
+      "scenario": "Um país precisa definir o papel de bancos, indústrias e infraestrutura em sua economia.",
+      "question": "Qual arranjo você tenderia a defender?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Empresas majoritariamente privadas, com pouca intervenção estatal.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Empresas privadas com regulação, tributação e serviços públicos fortes.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Setores estratégicos públicos, com maior participação dos trabalhadores.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Propriedade predominantemente social ou coletiva dos meios de produção.",
+          "kind": "declared"
+        },
+        {
+          "code": "E",
+          "label": "Depende do setor e das consequências mensuráveis.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["ownership"],
+      "source_ids": ["S01", "S05"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Propriedade pública, social e cooperativa não são sinônimos. Esta questão também reúne regulação e participação: não isolamos causalmente cada preferência."
+    },
+    {
+      "id": "Q02",
+      "title": "Critério para escolher modelos econômicos",
+      "scenario": "Há diferentes propostas sobre como organizar a economia, com objetivos e efeitos potencialmente distintos.",
+      "question": "Qual critério é mais importante para você?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Preservar a propriedade privada e a liberdade contratual.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Preservar instituições de mercado com forte proteção social.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Ampliar gradualmente a propriedade social como princípio de justiça.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Transformar estruturalmente as relações de propriedade, mesmo diante de custos de transição.",
+          "kind": "declared"
+        },
+        {
+          "code": "E",
+          "label": "Comparar resultados concretos sem compromisso inicial com um modelo.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["decision_principles"],
+      "source_ids": ["S05"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Esta pergunta registra o critério declarado. Não produz posição em um eixo nem classificação de centro."
+    },
+    {
+      "id": "Q03",
+      "title": "Reforma de estatal ou concessão",
+      "scenario": "Uma empresa estatal enfrenta problemas de gestão. Um estudo hipotético estima benefícios econômicos com uma concessão privada regulada, mas menor participação trabalhista.",
+      "question": "Qual seria sua prioridade?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Aceitar a concessão, se resultados e garantias contratuais forem suficientes.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Aceitar concessões em alguns setores, mantendo serviços essenciais públicos.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Reformar a empresa pública para preservar o controle coletivo.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Manter o controle público e ampliar a gestão democrática dos trabalhadores.",
+          "kind": "declared"
+        },
+        {
+          "code": "E",
+          "label": "Solicitar avaliação adicional dos riscos, custos e alternativas.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["ownership", "governance"],
+      "source_ids": ["S02"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "O benefício da concessão é uma premissa hipotética, não um resultado empírico. As alternativas não cobrem todos os contratos possíveis."
+    },
+    {
+      "id": "Q04",
+      "title": "Estatal versus cooperativa",
+      "scenario": "Duas empresas de energia apresentam o mesmo preço e desempenho: uma é estatal sob direção governamental, outra é cooperativa de trabalhadores.",
+      "question": "Qual arranjo escolheria?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Estatal sob direção governamental e fiscalização pública.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Cooperativa administrada pelos trabalhadores.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Estatal com gestão democrática compartilhada.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Qualquer uma, se garantir acesso universal e responsabilidade pública.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["ownership", "governance"],
+      "source_ids": ["S02", "S05"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "A equivalência de desempenho é hipotética. Escolher cooperativa não revela a posição sobre toda a economia."
+    },
+    {
+      "id": "Q05",
+      "title": "Oposição e liberdade de expressão",
+      "scenario": "Um governante apoiado por você afirma que manifestações pacíficas e reportagens críticas prejudicam seu projeto e propõe restrições temporárias.",
+      "question": "Qual limite deveria valer?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Não restringir manifestações pacíficas ou críticas somente por serem contrárias ao governo.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Admitir apenas restrições efetivamente excepcionais, previstas em lei, necessárias e fiscalizadas.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Aceitar restrições decididas pelo governo quando defender projeto nacional.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Decidir segundo características concretas do risco e a proporcionalidade da medida.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["civil_liberties", "rule_of_law"],
+      "source_ids": ["S01", "S03"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Restrições jurídicas dependem do caso. Oposição pacífica e críticas não se confundem com violência."
+    },
+    {
+      "id": "Q06",
+      "title": "Riscos pessoais e intervenção pública",
+      "scenario": "Adultos informados praticam atividades esportivas perigosas que geram custos de saúde pública.",
+      "question": "Qual resposta estatal você preferiria?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Permitir, desde que não causem danos diretos a terceiros.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Regular, exigir medidas de segurança e evitar proibições automáticas.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Considerar proibições quando riscos e custos coletivos forem muito elevados.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Analisar magnitude do risco e alternativas menos restritivas.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["civil_liberties"],
+      "source_ids": ["S01", "S03"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Autonomia e efeitos sobre terceiros são critérios diferentes. A fonte conceitual de liberdade não prova custos de esportes."
+    },
+    {
+      "id": "Q07",
+      "title": "Privacidade e investigações",
+      "scenario": "Um sistema público promete combater crimes usando acesso contínuo às mensagens e localização de toda a população, inclusive sem suspeita específica.",
+      "question": "Qual abordagem defenderia?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Rejeitar vigilância indiscriminada em defesa da privacidade.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Permitir apenas investigações direcionadas, com fundamento e controles legais.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Admitir monitoramento amplo se comprovada eficácia e fiscalização.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Avaliar salvaguardas e alternativas antes da decisão.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["civil_liberties", "rule_of_law"],
+      "source_ids": ["S01", "S03"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Privacidade e segurança exigem delimitação de finalidade, necessidade e controles. O cenário não comprova eficácia do monitoramento."
+    },
+    {
+      "id": "Q08",
+      "title": "Laicidade e legislação",
+      "scenario": "Uma maioria religiosa deseja converter preceitos de sua fé em leis obrigatórias para todos.",
+      "question": "Como as leis devem ser justificadas?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Por justificativas públicas independentes de uma religião específica.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Convicções religiosas podem inspirar políticas, mas restrições exigem justificativa pública independente da fé.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Tradição religiosa majoritária pode fundamentar leis mesmo sem justificativa pública comum.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "A resposta depende do direito concreto e de seus efeitos.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["civil_liberties", "pluralism"],
+      "source_ids": ["S01", "S03"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Registrar uma posição sobre leis não permite inferir a religião de quem responde."
+    },
+    {
+      "id": "Q09",
+      "title": "Consentimento e vida privada",
+      "scenario": "Uma maioria reprova relações afetivas consensuais entre adultos, sem violência, coerção ou dano demonstrável a terceiros.",
+      "question": "Qual papel a lei deve desempenhar?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Não proibir apenas por reprovação moral majoritária.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Proteger consentimento, igualdade, autonomia e direitos dos envolvidos.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Permitir proibições baseadas em valores morais tradicionais mesmo sem dano a terceiros.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Avaliar as circunstâncias e consequências jurídicas.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["civil_liberties"],
+      "source_ids": ["S01", "S03"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "A questão versa sobre autonomia em cenário delimitado, não permite inferir orientação sexual."
+    },
+    {
+      "id": "Q10",
+      "title": "Investigações contra governo apoiado",
+      "scenario": "Um governo cujas propostas você apoia enfrenta uma investigação independente sobre indícios de corrupção numa estatal.",
+      "question": "Qual princípio deve valer?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Investigar com independência, transparência e direito de defesa.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Investigar, exigindo justificação rigorosa para medidas que afetem serviços públicos.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Permitir ao governo suspender a investigação para proteger projeto econômico.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Examinar provas e legalidade antes de decidir sobre providências.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["rule_of_law"],
+      "source_ids": ["S01", "S03"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Indícios não equivalem a culpa. Investigação e direito de defesa podem coexistir."
+    },
+    {
+      "id": "Q11",
+      "title": "Provas ilícitas contra adversário",
+      "scenario": "Um governante de quem você discorda é acusado de corrupção. Parte das provas foi obtida com violação de direitos.",
+      "question": "Qual regra aplicaria?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Excluir provas ilícitas e prosseguir com meios legais.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Discutir exceções legais específicas, se juridicamente previstas, com controle judicial.",
+          "kind": "conditional"
+        },
+        {
+          "code": "C",
+          "label": "Utilizar as provas independentemente do modo de obtenção.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Avaliar natureza da ilegalidade e regras aplicáveis.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["rule_of_law"],
+      "source_ids": ["S01"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "No Brasil, o art. 5º, LVI, veda provas ilícitas; exceções e prova derivada exigem análise jurídica. Não é aconselhamento jurídico."
+    },
+    {
+      "id": "Q12",
+      "title": "Tributação progressiva",
+      "scenario": "Um país reduz a pobreza, mas a riqueza segue concentrada. Considera-se tributar grandes heranças e patrimônios para financiar serviços públicos.",
+      "question": "Qual orientação priorizaria?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Concentrar esforços na redução da pobreza, sem objetivo de diminuir diferenças patrimoniais.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Tributar progressivamente, avaliando impactos em investimento, emprego e serviços.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Combater estruturalmente a concentração de riqueza e poder econômico.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Priorizar produtividade, salários e oportunidades sem ampliar tributos patrimoniais.",
+          "kind": "declared"
+        },
+        {
+          "code": "E",
+          "label": "Avaliar dados, qualidade dos gastos e efeitos das medidas.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["distribution"],
+      "source_ids": ["S01", "S04"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Pobreza, desigualdade e concentração patrimonial são problemas distintos. As medidas têm efeitos dependentes do desenho."
+    },
+    {
+      "id": "Q13",
+      "title": "Desigualdade de origem",
+      "scenario": "Duas pessoas começam a vida com oportunidades muito desiguais, inclusive quanto à riqueza herdada.",
+      "question": "Qual abordagem expressa sua prioridade?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Investir em igualdade de oportunidades, preservando amplamente a herança.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Combinar serviços públicos e tributação progressiva sobre grandes heranças.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Ampliar propriedade pública/coletiva para diminuir concentração estrutural.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Priorizar liberdade patrimonial e crescimento econômico.",
+          "kind": "declared"
+        },
+        {
+          "code": "E",
+          "label": "Comparar impactos e resultados das propostas.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["distribution", "ownership"],
+      "source_ids": ["S04", "S05"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "As alternativas combinam prioridades que podem coexistir. O resultado apenas reproduz a preferência escolhida."
+    },
+    {
+      "id": "Q14",
+      "title": "Propriedade privada na economia futura",
+      "scenario": "Um novo país democrático deve definir a distribuição de empresas públicas, coletivas e privadas.",
+      "question": "Qual composição escolheria?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Economia predominantemente privada, com regulação.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Economia mista com setores essenciais públicos.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Socialização gradual de grandes empresas, preservando pequenos negócios privados.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Propriedade social predominante dos meios de produção.",
+          "kind": "declared"
+        },
+        {
+          "code": "E",
+          "label": "A composição deve variar segundo evidências e setores.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["ownership"],
+      "source_ids": ["S01", "S05"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Economia mista, propriedade social e pequenos negócios são conceitos diferentes; não inferimos autoritarismo."
+    },
+    {
+      "id": "Q15",
+      "title": "Grandes empresas e democratização",
+      "scenario": "Uma empresa privada criada legalmente tornou-se muito grande, lucrativa, respeita a lei e deseja continuar concentrada nas mãos de seus proprietários.",
+      "question": "Qual regra tenderia a preferir?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Preservar controle e lucros privados, sujeitos à lei.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Preservar a empresa, com tributação progressiva e mecanismos anticoncentração.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Compartilhar gradualmente propriedade e gestão mediante regras e compensações legais.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Estabelecer predomínio da propriedade social em grandes empresas.",
+          "kind": "declared"
+        },
+        {
+          "code": "E",
+          "label": "Adotar regime distinto conforme setor e risco sistêmico.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["ownership", "distribution"],
+      "source_ids": ["S01", "S05"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Legalidade atual não decide a justiça de reformas futuras. A pergunta não descreve uma empresa real."
+    },
+    {
+      "id": "Q16",
+      "title": "Administração de empresas públicas",
+      "scenario": "Há muitas empresas estatais e surgem indícios de favorecimento político na escolha de seus dirigentes.",
+      "question": "Qual arranjo de governança prefere?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Direção indicada pelo governo eleito, com responsabilização eleitoral.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Direção profissional por mérito, com fiscalização independente.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Direção eleita pelos trabalhadores e representantes da sociedade.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Gestão compartilhada entre governo, empregados e sociedade.",
+          "kind": "declared"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["governance"],
+      "source_ids": ["S02"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Participação, profissionalização e responsabilização podem coexistir; não se infere o regime político desta escolha."
+    },
+    {
+      "id": "Q17",
+      "title": "Limites à herança",
+      "scenario": "Uma pessoa deixa grande patrimônio adquirido legalmente para seus herdeiros adultos e independentes.",
+      "question": "Como tratar a transmissão da riqueza?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Preservar amplamente a herança, com tributos ordinários.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Aplicar tributação sucessória progressiva, sem teto absoluto.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Adotar mecanismos graduais para reduzir concentração hereditária.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Estabelecer teto patrimonial rígido por reformas juridicamente válidas.",
+          "kind": "declared"
+        },
+        {
+          "code": "E",
+          "label": "Aplicar regras gerais diferenciadas segundo patrimônio e sucessão empresarial.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["distribution", "ownership"],
+      "source_ids": ["S01", "S04"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "O direito de herança e a tributação são institutos diferentes. Reformas hipotéticas não descrevem a regra atual."
+    },
+    {
+      "id": "Q18",
+      "title": "Garantias iguais para aliados e adversários",
+      "scenario": "Dois políticos de posições opostas são acusados com evidências equivalentes. Provas centrais foram obtidas ilegalmente, sem fonte independente.",
+      "question": "Qual regra deve valer igualmente?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Excluir provas ilegais nos dois casos, permitindo investigações por meios legais.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Admitir provas ilegais em ambos os casos, ainda que contrarie a regra constitucional atual.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Aplicar critérios diferentes de acordo com a pessoa investigada.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Ainda tenho dúvidas sobre a solução, mas a regra jurídica deve ser igual para ambos.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["rule_of_law"],
+      "source_ids": ["S01", "S03"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "A pergunta explicita a regra constitucional. Isso pode gerar desejabilidade social: não usamos a resposta como índice de imparcialidade."
+    },
+    {
+      "id": "Q19",
+      "title": "Mercados e planejamento numa economia socializada",
+      "scenario": "Grandes empresas passaram legalmente a pertencer ao Estado, a cooperativas ou à sociedade.",
+      "question": "Como deveriam ser determinados preços, produção e investimentos?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Mercado descentralizado: preços e investimentos definidos principalmente pela concorrência entre empresas, independentemente do proprietário.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Mercado regulado: concorrência com planejamento público em setores estratégicos e necessidades sociais.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Planejamento participativo: trabalhadores e cidadãos definem prioridades produtivas, usando mercados onde forem úteis.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Planejamento central: autoridade pública coordena a maior parte da produção, preços e investimentos.",
+          "kind": "declared"
+        },
+        {
+          "code": "E",
+          "label": "Depende do setor: definir a combinação considerando resultados, riscos e necessidades.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["coordination", "governance"],
+      "source_ids": ["S05"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Mercados podem coexistir com propriedade social. Planejamento participativo e central têm diferenças de governança. Cobertura de coordenação: apenas esta questão."
+    },
+    {
+      "id": "Q20",
+      "title": "Alternância democrática e políticas contrárias",
+      "scenario": "Um novo governo foi eleito democraticamente e pretende reverter políticas que você defende, respeitando Constituição e direitos fundamentais.",
+      "question": "Qual forma mais se aproxima da sua preferência, sabendo que as vias democráticas podem coexistir?",
+      "options": [
+        {
+          "code": "A",
+          "label": "Reconhecer o mandato e fazer oposição pelas vias democráticas.",
+          "kind": "declared"
+        },
+        {
+          "code": "B",
+          "label": "Reconhecer o resultado e utilizar instrumentos legais de fiscalização e contestação.",
+          "kind": "declared"
+        },
+        {
+          "code": "C",
+          "label": "Promover manifestações pacíficas e pressão social, respeitando garantias constitucionais.",
+          "kind": "declared"
+        },
+        {
+          "code": "D",
+          "label": "Bloquear medidas por meios contrários às regras democráticas.",
+          "kind": "declared"
+        },
+        {
+          "code": "E",
+          "label": "Depende das medidas concretas e de seus limites legais.",
+          "kind": "conditional"
+        },
+        {
+          "code": "?",
+          "label": "Não sei / prefiro não responder.",
+          "kind": "uncertain"
+        }
+      ],
+      "dimensions": ["rule_of_law", "pluralism"],
+      "source_ids": ["S01", "S03"],
+      "scoring_status": "descriptive-no-score",
+      "estimated_time_seconds": 40,
+      "explanation": "Oposição institucional, fiscalização e protesto pacífico podem coexistir. A/B/C são formas democráticas; nenhuma recebe pontuação superior."
+    }
+  ]
+}

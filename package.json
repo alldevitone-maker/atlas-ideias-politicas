@@ -1,0 +1,59 @@
+{
+  "name": "atlas-ideias-politicas",
+  "version": "0.1.0",
+  "description": "Atlas educativo com question\u00e1rio explorat\u00f3rio local, sem rastreamento.",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test",
+    "test:a11y": "playwright test -g acessibilidade",
+    "check:links": "node scripts/check-links.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/source-sans-3": "^5.3.1",
+    "@radix-ui/react-dialog": "^1.3.1",
+    "@react-pdf/renderer": "^4.9.0",
+    "d3": "^7.9.0",
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.56.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@types/d3": "^7.4.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "jsdom": "^30.1.3",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "private": true
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore correntes políticas, responda 20 perguntas e reflita sobre suas escolhas. Sem login, rastreamento ou envio de respostas."
+    />
+    <meta name="theme-color" content="#07101e" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <meta property="og:title" content="Atlas das Ideias Políticas" />
+    <meta
+      property="og:description"
+      content="Um mapa para explorar conceitos. Um espaço para refletir."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <title>Atlas das Ideias Políticas</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript
+      >O Atlas precisa de JavaScript para gráficos e cálculos locais. As
+      respostas não são enviadas. O conteúdo e as fontes estão disponíveis no
+      repositório do projeto.</noscript
+    >
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

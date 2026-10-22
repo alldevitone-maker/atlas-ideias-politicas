@@ -1,0 +1,142 @@
+[
+  {
+    "id": "comunismo",
+    "name": "Comunismo",
+    "family": "historical-left",
+    "definition": "Propriedade comum e sociedade sem classes são ideais teóricos; regimes históricos diferem.",
+    "variants": ["Marxismos", "Comunismo conselhista"],
+    "sourceIds": ["S22", "S05"],
+    "icon": "comm",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "anarquismos",
+    "name": "Anarquismos",
+    "family": "historical-left",
+    "definition": "Contestam hierarquias coercitivas; divergem sobre organização econômica e ação política.",
+    "variants": ["Anarcocomunismo", "Anarcossindicalismo", "Individualismos"],
+    "sourceIds": ["S19"],
+    "icon": "network",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "socialismo",
+    "name": "Socialismo democrático",
+    "family": "socialist",
+    "definition": "Busca controle social da produção com instituições democráticas.",
+    "variants": ["Democracia econômica", "Autogestão"],
+    "sourceIds": ["S05"],
+    "icon": "users",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "mercado-social",
+    "name": "Socialismo de mercado",
+    "family": "socialist",
+    "definition": "Combina propriedade social e mecanismos de mercado.",
+    "variants": ["Cooperativas", "Fundos sociais"],
+    "sourceIds": ["S05"],
+    "icon": "factory",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "planejamento",
+    "name": "Planejamento participativo",
+    "family": "socialist",
+    "definition": "Propõe coordenação econômica por participação social.",
+    "variants": ["Deliberação", "Coordenação negociada"],
+    "sourceIds": ["S05"],
+    "icon": "network",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "socialdemocracia",
+    "name": "Social-democracia",
+    "family": "democratic-left",
+    "definition": "Reformas, proteção social e redistribuição em economia de mercado.",
+    "variants": ["Estado de bem-estar", "Reformas sociais"],
+    "sourceIds": ["S05"],
+    "icon": "users",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "liberalismo-social",
+    "name": "Liberalismo social",
+    "family": "center-left",
+    "definition": "Articula liberdade individual com condições sociais para exercê-la.",
+    "variants": ["Igualdade de oportunidades", "Garantias sociais"],
+    "sourceIds": ["S17"],
+    "icon": "scale",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "centro",
+    "name": "Centro político",
+    "family": "center",
+    "definition": "Categoria relacional e contextual, não ausência de convicções.",
+    "variants": ["Compromissos", "Posições combinadas"],
+    "sourceIds": ["S17", "S18"],
+    "icon": "compass",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "liberalismo-politico",
+    "name": "Liberalismo político",
+    "family": "center",
+    "definition": "Prioriza liberdades e justificação do poder; inclui divergências econômicas.",
+    "variants": ["Constitucionalismo", "Pluralismo"],
+    "sourceIds": ["S17"],
+    "icon": "landmark",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "liberalismo-classico",
+    "name": "Liberalismo clássico",
+    "family": "center-right",
+    "definition": "Destaca liberdade, propriedade privada e limites ao poder.",
+    "variants": ["Governo limitado", "Direitos individuais"],
+    "sourceIds": ["S17"],
+    "icon": "scale",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "conservadorismo",
+    "name": "Conservadorismo",
+    "family": "right",
+    "definition": "Valoriza continuidade e prudência na mudança institucional.",
+    "variants": ["Tradicionalismo", "Conservadorismo pragmático"],
+    "sourceIds": ["S18"],
+    "icon": "shield",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "libertarianismo",
+    "name": "Libertarianismo",
+    "family": "right",
+    "definition": "Dá prioridade à liberdade individual; diverge sobre propriedade e recursos.",
+    "variants": ["Libertarianismo de direita", "Libertarianismo de esquerda"],
+    "sourceIds": ["S20"],
+    "icon": "key",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "fascismo",
+    "name": "Fascismo",
+    "family": "historical-right",
+    "definition": "Ultranacionalismo antidemocrático, culto à liderança e violência política.",
+    "variants": ["Contexto histórico italiano", "Movimentos fascistas"],
+    "sourceIds": ["S21"],
+    "icon": "fasces",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  },
+  {
+    "id": "nazismo",
+    "name": "Nazismo",
+    "family": "historical-right",
+    "definition": "Ditadura racista e antissemita responsável pelo Holocausto.",
+    "variants": ["Alemanha nazista", "Perseguição e genocídio"],
+    "sourceIds": ["S14"],
+    "icon": "archive",
+    "limitation": "A localização nesta faixa é uma escolha editorial contextual, não uma medida universal. Consulte as fontes e as divergências internas."
+  }
+]
