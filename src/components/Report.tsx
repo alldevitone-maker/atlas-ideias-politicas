@@ -280,7 +280,14 @@ export function Report({
                   <Text style={{ width: 28, fontSize: 8 }}>{q.id}</Text>
                   <Text style={{ width: 70, fontSize: 8 }}>
                     {answers[q.id] ?? "—"} ·{" "}
-                    {statusNames[statusFor(q.id, answers)]}
+                    {
+                      {
+                        declared: "decl.",
+                        conditional: "cond.",
+                        uncertain: "inc.",
+                        missing: "aus.",
+                      }[statusFor(q.id, answers)]
+                    }
                   </Text>
                   <Text style={{ fontSize: 8 }}>
                     {q.dimensions
@@ -409,22 +416,26 @@ export function Report({
             </Link>
           </View>
         ))}
-        {full && (
-          <>
-            <Text style={s.h2}>Referência editorial da linha</Text>
-            {ideologies.map((i) => (
-              <Text key={i.id} style={s.small}>
-                {i.name}: {i.definition} Fontes: {i.sourceIds.join(", ")}.
-              </Text>
-            ))}
-          </>
-        )}
         <Text style={s.small}>
           Privacidade: nenhuma resposta enviada. Limpar o site não elimina os
           PDFs baixados. Este relatório não substitui estudo histórico,
           avaliação jurídica ou pesquisa científica.
         </Text>
       </Page>
+      {full && (
+        <Page size="A4" style={s.page}>
+          <Text style={s.title}>Biblioteca resumida</Text>
+          <Text style={s.sub}>
+            Organização editorial, sem medida de identidade. Leia as fontes para
+            variações internas.
+          </Text>
+          {ideologies.map((i) => (
+            <Text key={i.id} style={{ ...s.small, marginBottom: 10 }}>
+              {i.name}: {i.definition} Fontes: {i.sourceIds.join(", ")}.
+            </Text>
+          ))}
+        </Page>
+      )}
     </Document>
   );
 }
@@ -454,6 +465,8 @@ export async function downloadReport(
   const a = document.createElement("a");
   a.href = url;
   a.download = `atlas-ideias-${full ? "completo" : "resumo"}-${new Date().toISOString().slice(0, 10)}.pdf`;
+  document.body.appendChild(a);
   a.click();
+  a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 30000);
 }

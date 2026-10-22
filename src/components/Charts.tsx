@@ -104,7 +104,7 @@ export function ZoomCanvas({
     const styles = getComputedStyle(svg.current);
     copy.setAttribute(
       "style",
-      `background:${styles.getPropertyValue("--surface")};color:${styles.color};font-family:Arial,sans-serif`,
+      `--surface:${styles.getPropertyValue("--surface")};--surface-2:${styles.getPropertyValue("--surface-2")};background:${styles.getPropertyValue("--surface")};color:${styles.color};font-family:Arial,sans-serif`,
     );
     copy
       .querySelectorAll("text")
@@ -116,7 +116,9 @@ export function ZoomCanvas({
     const a = document.createElement("a");
     a.href = url;
     a.download = "atlas-grafico.svg";
+    document.body.appendChild(a);
     a.click();
+    a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
   return (

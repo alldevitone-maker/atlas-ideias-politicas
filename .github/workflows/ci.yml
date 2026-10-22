@@ -27,6 +27,18 @@ jobs:
       - run: npm run build
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm run test:e2e
+      - name: Measure production home (three mobile Lighthouse runs)
+        continue-on-error: true
+        run: |
+          npm run preview -- --port 4175 >/tmp/atlas-preview.log 2>&1 &
+          ATLAS_PREVIEW_PID=$!
+          trap 'kill "$ATLAS_PREVIEW_PID" 2>/dev/null || true' EXIT
+          export CHROME_PATH="$(node -p "require('playwright').chromium.executablePath()")"
+          mkdir -p performance
+          for ATLAS_RUN in 1 2 3; do
+            npx --yes lighthouse@13.5.0 http://127.0.0.1:4175/atlas-ideias-politicas/ --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage" --quiet --output=json --output-path=performance/mobile-$ATLAS_RUN.json
+          done
+          node scripts/perf-summary.mjs
       - name: Source availability (external hosts may block automation)
         continue-on-error: true
         run: npm run check:links
@@ -38,6 +50,7 @@ jobs:
             playwright-report/
             test-results/
             docs/LINK_CHECK.json
+            performance/
       - uses: actions/upload-artifact@v4
         with:
           name: production-dist
