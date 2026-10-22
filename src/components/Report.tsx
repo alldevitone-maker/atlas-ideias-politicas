@@ -51,9 +51,9 @@ const s = StyleSheet.create({
   col: { flex: 1 },
   footer: {
     position: "absolute",
-    bottom: 17,
+    top: 800,
     left: 34,
-    right: 34,
+    width: 527,
     fontSize: 8,
     lineHeight: 1.3,
     height: 14,
@@ -81,7 +81,9 @@ function Foot() {
         render={({ pageNumber, totalPages }) =>
           `Atlas das Ideias Políticas · conteúdo 1.0.0 · exploratório não validado · ${pageNumber}/${totalPages}`
         }
-      />
+      >
+        Atlas das Ideias Políticas · conteúdo 1.0.0 · exploratório não validado
+      </Text>
     </View>
   );
 }

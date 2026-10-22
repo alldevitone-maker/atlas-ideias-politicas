@@ -11,7 +11,7 @@ Plataforma educativa em português com biblioteca de correntes, 20 perguntas exp
 - PDFs curto e completo são gerados no cliente com fonte incorporada e seis visuais. Demonstrações usam respostas fictícias e estão marcadas como tal.
 - **Nenhuma URL Pages ou release v1.0.0 é anunciada antes de verificação.** Ver [QA](docs/QA.md) para resultados e limitações.
 
-![Home no tema escuro](docs/evidence/home-dark-1440.png)
+![Home no tema escuro](docs/evidence/home-dark-1440.webp)
 
 ## Desenvolvimento
 

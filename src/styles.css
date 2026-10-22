@@ -64,7 +64,6 @@ button {
   cursor: pointer;
   font-size: 13px;
   transition:
-    background 0.15s,
     border-color 0.15s,
     transform 0.15s;
 }

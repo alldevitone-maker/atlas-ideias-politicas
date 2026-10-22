@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 async function quiz(page: import("@playwright/test").Page) {
-  await page.goto("#/teste");
+  if (!page.url().endsWith("#/teste")) await page.goto("#/teste");
   for (let i = 0; i < 20; i++) {
     await page
       .getByRole("radio")
@@ -170,4 +170,60 @@ test("acessibilidade automatizada em home, quiz, resultado e temas", async ({
       expect(results.violations).toEqual([]);
     }
   }
+});
+
+test("gestos: roda com foco, arraste, pinça e exportação vetorial", async ({
+  page,
+  context,
+  browserName,
+}) => {
+  test.skip(
+    browserName !== "chromium",
+    "Injeção de dois contatos via CDP, complementar à emulação WebKit.",
+  );
+  await page.goto("");
+  const canvas = page.getByRole("group", { name: /linha das correntes/ });
+  await canvas.focus();
+  const box = await canvas.boundingBox();
+  if (!box) throw new Error("Gráfico sem área");
+  await page.mouse.move(box.x + box.width / 2, box.y + 100);
+  await page.mouse.wheel(0, -280);
+  await expect(page.getByLabel("Escala do gráfico")).not.toHaveText("1.0×");
+  await page.mouse.down();
+  await page.mouse.move(box.x + box.width / 2 + 50, box.y + 100);
+  await page.mouse.up();
+  await page
+    .getByRole("button", { name: "Recentrar linha das correntes", exact: true })
+    .click();
+  await expect(page.getByLabel("Escala do gráfico")).toHaveText("1.0×");
+  const cdp = await context.newCDPSession(page);
+  const cy = box.y + 150,
+    cx = box.x + box.width / 2;
+  await cdp.send("Input.dispatchTouchEvent", {
+    type: "touchStart",
+    touchPoints: [
+      { x: cx - 30, y: cy },
+      { x: cx + 30, y: cy },
+    ],
+  });
+  await cdp.send("Input.dispatchTouchEvent", {
+    type: "touchMove",
+    touchPoints: [
+      { x: cx - 70, y: cy },
+      { x: cx + 70, y: cy },
+    ],
+  });
+  await cdp.send("Input.dispatchTouchEvent", {
+    type: "touchEnd",
+    touchPoints: [],
+  });
+  await expect(page.getByLabel("Escala do gráfico")).not.toHaveText("1.0×");
+  const download = page.waitForEvent("download");
+  await page
+    .getByRole("button", {
+      name: "Exportar SVG linha das correntes",
+      exact: true,
+    })
+    .click();
+  expect((await download).suggestedFilename()).toBe("atlas-grafico.svg");
 });
