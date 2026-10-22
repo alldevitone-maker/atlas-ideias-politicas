@@ -79,7 +79,7 @@ console.log(
 );
 await writeFile(
   "docs/evidence/layout-checks.json",
-  JSON.stringify(checks, null, 2),
+  JSON.stringify(checks, null, 2) + "\n",
 );
 page.on("console", (m) => {
   if (m.type() === "error") console.log("BROWSER ERROR", m.text());

@@ -1,7 +1,7 @@
 {
   "name": "atlas-ideias-politicas",
   "version": "0.1.0",
-  "description": "Atlas educativo com question\u00e1rio explorat\u00f3rio local, sem rastreamento.",
+  "description": "Atlas educativo com questionário exploratório local, sem rastreamento.",
   "directories": {
     "doc": "docs"
   },
@@ -29,6 +29,7 @@
     "@react-pdf/renderer": "^4.9.0",
     "d3": "^7.9.0",
     "lucide-react": "^1.61.0",
+    "pdf-lib": "^1.17.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

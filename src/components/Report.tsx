@@ -73,20 +73,6 @@ const color = {
   uncertain: "#75549a",
   missing: "#75849a",
 };
-function Foot() {
-  return (
-    <View fixed style={s.footer}>
-      <Text
-        style={{ fontSize: 8, lineHeight: 1.3 }}
-        render={({ pageNumber, totalPages }) =>
-          `Atlas das Ideias Políticas · conteúdo 1.0.0 · exploratório não validado · ${pageNumber}/${totalPages}`
-        }
-      >
-        Atlas das Ideias Políticas · conteúdo 1.0.0 · exploratório não validado
-      </Text>
-    </View>
-  );
-}
 export function Report({
   answers,
   name,
@@ -221,7 +207,6 @@ export function Report({
           Itens multitemáticos entram em mais de uma linha. As cores indicam
           estado da resposta, não posição. Fontes: S03, S04, S05.
         </Text>
-        <Foot />
       </Page>
       <Page size="A4" style={s.page}>
         <Text style={s.title}>Cobertura e relações</Text>
@@ -381,7 +366,6 @@ export function Report({
           Socialism/2024 (S05); USHMM, Fascism e O Partido Nazista (S21/S14).
           Bibliografia clicável a seguir.
         </Text>
-        <Foot />
       </Page>
       {full && (
         <Page size="A4" style={s.page}>
@@ -406,7 +390,6 @@ export function Report({
               <Text style={s.small}>Fontes: {q.source_ids.join(", ")}.</Text>
             </View>
           ))}
-          <Foot />
         </Page>
       )}
       <Page size="A4" style={s.page}>
@@ -441,7 +424,6 @@ export function Report({
           PDFs baixados. Este relatório não substitui estudo histórico,
           avaliação jurídica ou pesquisa científica.
         </Text>
-        <Foot />
       </Page>
     </Document>
   );
@@ -454,7 +436,21 @@ export async function downloadReport(
   const blob = await pdf(
     <Report answers={answers} name={name} full={full} />,
   ).toBlob();
-  const url = URL.createObjectURL(blob);
+  const { PDFDocument, StandardFonts, rgb } = await import("pdf-lib");
+  const finalDocument = await PDFDocument.load(await blob.arrayBuffer());
+  const footerFont = await finalDocument.embedFont(StandardFonts.Helvetica);
+  const pages = finalDocument.getPages();
+  pages.forEach((page, index) =>
+    page.drawText(
+      `Atlas das Ideias Políticas · conteúdo 1.0.0 · exploratório não validado · ${index + 1}/${pages.length}`,
+      { x: 34, y: 18, size: 8, font: footerFont, color: rgb(0.3, 0.36, 0.45) },
+    ),
+  );
+  const bytes = await finalDocument.save();
+  const finalBlob = new Blob([new Uint8Array(bytes).buffer], {
+    type: "application/pdf",
+  });
+  const url = URL.createObjectURL(finalBlob);
   const a = document.createElement("a");
   a.href = url;
   a.download = `atlas-ideias-${full ? "completo" : "resumo"}-${new Date().toISOString().slice(0, 10)}.pdf`;
